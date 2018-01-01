@@ -41,7 +41,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="36dp"
         android:fontFamily="@font/montserrat"
-        android:text="I am a: "
+        android:text="@string/i_am_a"
         android:textColor="@android:color/white"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -58,7 +58,7 @@
         android:layout_marginStart="24dp"
         android:background="@drawable/swoosh_button"
         android:fontFamily="@font/montserrat"
-        android:text="FINISH"
+        android:text="@string/finish"
         android:textColor="@android:color/white"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -84,10 +84,10 @@
             android:layout_weight="1"
             android:background="@drawable/swoosh_toggle"
             android:fontFamily="@font/montserrat"
-            android:text="BEGINNER"
+            android:text="@string/beginner"
             android:textColor="@android:color/white"
-            android:textOff="BEGINNER"
-            android:textOn="BEGINNER" />
+            android:textOff="@string/beginner"
+            android:textOn="@string/beginner" />
 
         <ToggleButton
             android:id="@+id/toggleButton5"
@@ -98,10 +98,10 @@
             android:layout_weight="1"
             android:background="@drawable/swoosh_toggle"
             android:fontFamily="@font/montserrat"
-            android:text="BALLER"
+            android:text="@string/baller"
             android:textColor="@android:color/white"
-            android:textOff="BALLER"
-            android:textOn="BALLER" />
+            android:textOff="@string/baller"
+            android:textOn="@string/baller" />
     </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>
