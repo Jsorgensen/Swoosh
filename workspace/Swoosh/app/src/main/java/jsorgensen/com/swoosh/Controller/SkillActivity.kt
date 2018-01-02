@@ -20,6 +20,18 @@ class SkillActivity : BaseActivity() {
         player = intent.getParcelableExtra(EXTRA_PLAYER)
     }
 
+    override fun onSaveInstanceState(outState: Bundle?) {
+        super.onSaveInstanceState(outState)
+        outState?.putParcelable(EXTRA_PLAYER, player)
+    }
+
+    override fun onRestoreInstanceState(savedInstanceState: Bundle?) {
+        super.onRestoreInstanceState(savedInstanceState)
+        if(savedInstanceState != null){
+            player = savedInstanceState.getParcelable(EXTRA_PLAYER)
+        }
+    }
+
     fun onSkillFinishClick(view: View) {
         if(player.skill == ""){
             Toast.makeText(this, "Select a skill level to continue.", Toast.LENGTH_LONG).show()
